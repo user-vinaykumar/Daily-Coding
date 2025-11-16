@@ -29,7 +29,6 @@ public class Fibonacci
 
 
     public static void main(String[] args) {
-        List<Integer> inputList = Arrays.asList(2, 3, 4, 5, 6, 11, 77, 67, 9, 0, 222);
         System.out.println(Fibonacci.fibonacci(10));
     }
 
