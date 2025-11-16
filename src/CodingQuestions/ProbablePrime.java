@@ -2,11 +2,9 @@ package CodingQuestions;
 
 import java.math.BigInteger;
 
-public class ProbablePrime
-{
+public class ProbablePrime {
 
-    public static boolean isPrime(int number)
-    {
+    public static boolean isPrime(int number) {
         return BigInteger.valueOf(number).isProbablePrime(number);
     }
 

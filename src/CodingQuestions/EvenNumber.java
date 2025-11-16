@@ -3,14 +3,11 @@ package CodingQuestions;
 import java.util.Arrays;
 import java.util.List;
 
-public class EvenNumber
-{
+public class EvenNumber {
 
-    public static List<Integer> evenNumber(List<Integer> list)
-    {
-        return list.stream().filter(n->n%2==0).toList();
+    public static List<Integer> evenNumber(List<Integer> list) {
+        return list.stream().filter(n -> n % 2 == 0).toList();
     }
-
 
 
     public static void main(String[] args) {

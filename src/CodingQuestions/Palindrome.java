@@ -1,9 +1,7 @@
 package CodingQuestions;
 
-public class Palindrome
-{
-    public static boolean isPalindrome(String word)
-    {
+public class Palindrome {
+    public static boolean isPalindrome(String word) {
         String term = String.valueOf(word);
         return term.equals(new StringBuilder(term).reverse().toString());
     }
