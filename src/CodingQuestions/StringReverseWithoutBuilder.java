@@ -4,14 +4,11 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.stream.Collectors;
 
-class StringReverseWithoutBuilder
-{
+class StringReverseWithoutBuilder {
 
-    public static String stringReverse(String word)
-    {
+    public static String stringReverse(String word) {
         Deque<Character> stack = new ArrayDeque<>();
-        for(char c : word.toCharArray())
-        {
+        for (char c : word.toCharArray()) {
             stack.push(c);
         }
         String res = stack.stream().map(String::valueOf).collect(Collectors.joining());
