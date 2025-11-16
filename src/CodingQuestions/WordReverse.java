@@ -1,6 +1,5 @@
 package CodingQuestions;
 
-import java.sql.SQLOutput;
 
 public class WordReverse
 {
