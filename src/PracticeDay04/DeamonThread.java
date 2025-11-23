@@ -2,20 +2,16 @@ package PracticeDay04;
 
 public class DeamonThread implements Runnable {
 
-    public static void sleep(long milis)
-    {
+    public static void sleep(long milis) {
         try {
             Thread.sleep(milis);
-        }catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void run()
-    {
-        while (true)
-        {
+    public void run() {
+        while (true) {
             sleep(500);
             System.out.println("---");
         }

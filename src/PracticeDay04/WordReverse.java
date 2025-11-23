@@ -2,8 +2,7 @@ package PracticeDay04;
 
 public class WordReverse {
 
-    public static String wordReverse(String word)
-    {
+    public static String wordReverse(String word) {
         return new StringBuilder(word).reverse().toString();
     }
 

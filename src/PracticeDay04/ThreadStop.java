@@ -1,36 +1,30 @@
 package PracticeDay04;
 
-public class ThreadStop implements Runnable{
+public class ThreadStop implements Runnable {
 
 
     private boolean flag = false;
 
-    public void turnoff()
-    {
+    public void turnoff() {
         this.flag = true;
     }
 
-    public boolean turnedOff()
-    {
+    public boolean turnedOff() {
         return this.flag;
     }
 
 
-    public static void sleep(long milis)
-    {
+    public static void sleep(long milis) {
         try {
             Thread.sleep(milis);
-        }catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void run()
-    {
+    public void run() {
         System.out.println("started");
-        while (!turnedOff())
-        {
+        while (!turnedOff()) {
             sleep(750);
             System.out.println("---");
         }
