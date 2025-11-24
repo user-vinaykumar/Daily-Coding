@@ -5,16 +5,14 @@ import java.util.List;
 
 public class Fibonacci {
 
-    public static List<Integer> fibonacci(int number)
-    {
+    public static List<Integer> fibonacci(int number) {
         List<Integer> outputList = new ArrayList<>();
-        if(number == 0) return outputList;
+        if (number == 0) return outputList;
         outputList.add(0);
-        if(number == 1) return outputList;
+        if (number == 1) return outputList;
         outputList.add(1);
-        for(int i = 2; i < number; i ++)
-        {
-            outputList.add(outputList.get(i-1)+outputList.get(i-2));
+        for (int i = 2; i < number; i++) {
+            outputList.add(outputList.get(i - 1) + outputList.get(i - 2));
         }
         return outputList;
     }

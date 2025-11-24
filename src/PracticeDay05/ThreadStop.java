@@ -4,31 +4,25 @@ public class ThreadStop implements Runnable {
 
     private boolean flag = false;
 
-    public void turnoff()
-    {
+    public void turnoff() {
         this.flag = true;
     }
 
-    public boolean turnedoff()
-    {
+    public boolean turnedoff() {
         return this.flag;
     }
 
-    public void sleep(long milis)
-    {
+    public void sleep(long milis) {
         try {
             Thread.sleep(milis);
-        }catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void run()
-    {
+    public void run() {
         System.out.println("started");
-        while (!turnedoff())
-        {
+        while (!turnedoff()) {
             sleep(1000);
             System.out.println("---");
         }

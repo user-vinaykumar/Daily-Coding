@@ -2,11 +2,10 @@ package PracticeDay05;
 
 import java.util.List;
 
-public class EvenNumberList{
+public class EvenNumberList {
 
-    public static List<Integer> evenNumberList(List<Integer> inputList)
-    {
-        return inputList.stream().filter(n->n%2==0).toList();
+    public static List<Integer> evenNumberList(List<Integer> inputList) {
+        return inputList.stream().filter(n -> n % 2 == 0).toList();
     }
 
 

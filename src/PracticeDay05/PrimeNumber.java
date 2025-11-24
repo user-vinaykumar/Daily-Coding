@@ -4,8 +4,7 @@ import java.math.BigInteger;
 
 public class PrimeNumber {
 
-    public static boolean isPrimeNumber(int number)
-    {
+    public static boolean isPrimeNumber(int number) {
         return BigInteger.valueOf(number).isProbablePrime(number);
     }
 

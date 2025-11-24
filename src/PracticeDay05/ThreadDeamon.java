@@ -1,21 +1,17 @@
 package PracticeDay05;
 
-public class ThreadDeamon implements Runnable{
+public class ThreadDeamon implements Runnable {
 
-    public void sleep(long milis)
-    {
+    public void sleep(long milis) {
         try {
             Thread.sleep(milis);
-        }catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public void run()
-    {
-        while(true)
-        {
+    public void run() {
+        while (true) {
             sleep(1000);
             System.out.println("---");
         }
