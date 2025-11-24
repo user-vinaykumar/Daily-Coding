@@ -1,0 +1,17 @@
+package PracticeDay05;
+
+import java.util.List;
+
+public class EvenNumberList{
+
+    public static List<Integer> evenNumberList(List<Integer> inputList)
+    {
+        return inputList.stream().filter(n->n%2==0).toList();
+    }
+
+
+    public static void main(String[] args) {
+        List<Integer> list = List.of(2, 3, 4, 5, 6, 7, 8, 9);
+        System.out.println(EvenNumberList.evenNumberList(list));
+    }
+}
