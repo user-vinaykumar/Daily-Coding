@@ -6,11 +6,9 @@ import java.util.stream.Collectors;
 
 public class ReverseString {
 
-    public static String reverseString(String word)
-    {
+    public static String reverseString(String word) {
         Deque<Character> stack = new ArrayDeque<>();
-        for(char c : word.toCharArray())
-        {
+        for (char c : word.toCharArray()) {
             stack.push(c);
         }
         String result = stack.stream().map(String::valueOf).collect(Collectors.joining());

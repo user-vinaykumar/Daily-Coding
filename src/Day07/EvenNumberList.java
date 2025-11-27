@@ -6,9 +6,8 @@ import java.util.List;
 
 public class EvenNumberList {
 
-    public static List<Integer> evenNumberList(List<Integer> list)
-    {
-        return list.stream().filter(n->n%2==0).toList();
+    public static List<Integer> evenNumberList(List<Integer> list) {
+        return list.stream().filter(n -> n % 2 == 0).toList();
     }
 
     public static void main(String[] args) {

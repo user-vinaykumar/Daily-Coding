@@ -6,21 +6,19 @@ import java.util.Map;
 
 public class TwoSum {
 
-    public static int[] twoSum(int[]nums, int target)
-    {
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
-        for(int i = 0; i < nums.length; i ++)
-        {
+        for (int i = 0; i < nums.length; i++) {
             int difference = target - nums[i];
-            if(map.containsKey(difference)) return new int[]{map.get(difference), i};
+            if (map.containsKey(difference)) return new int[]{map.get(difference), i};
             map.put(nums[i], i);
         }
         return new int[]{};
     }
 
     public static void main(String[] args) {
-        int[]nums = {1, 2, 4, 6, 7, 9};
-        int[]result = TwoSum.twoSum(nums, 16);
+        int[] nums = {1, 2, 4, 6, 7, 9};
+        int[] result = TwoSum.twoSum(nums, 16);
         System.out.println(Arrays.toString(result));
     }
 }

@@ -6,17 +6,14 @@ import java.util.List;
 
 public class MoveZeros {
 
-    public static List<Integer> moveZeros(List<Integer> list)
-    {
+    public static List<Integer> moveZeros(List<Integer> list) {
         int count = 0;
         List<Integer> outputList = new ArrayList<>();
-        for(int num : list)
-        {
-            if(num == 0) count++;
+        for (int num : list) {
+            if (num == 0) count++;
             else outputList.add(num);
         }
-        while(count-- > 0)
-        {
+        while (count-- > 0) {
             outputList.add(0);
         }
         return outputList;

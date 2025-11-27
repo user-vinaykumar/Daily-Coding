@@ -5,26 +5,22 @@ import java.util.Map;
 
 public class RepeatedCharacters {
 
-    public static void repeatedCharacters(String word)
-    {
+    public static void repeatedCharacters(String word) {
         int count = 0;
         Map<Character, Integer> map = new HashMap<>();
-        for(char c : word.toCharArray())
-        {
-            map.put(c, map.getOrDefault(c, 0)+1);
+        for (char c : word.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        for(Map.Entry<Character, Integer> maxEntry : map.entrySet())
-        {
-            if(maxEntry.getValue()>1)
-            {
-                System.out.println(maxEntry.getKey()+":"+maxEntry.getValue());
+        for (Map.Entry<Character, Integer> maxEntry : map.entrySet()) {
+            if (maxEntry.getValue() > 1) {
+                System.out.println(maxEntry.getKey() + ":" + maxEntry.getValue());
                 count++;
             }
         }
-        if(count==0) System.out.println("No characters has repeated more than once.");
+        if (count == 0) System.out.println("No characters has repeated more than once.");
     }
 
     public static void main(String[] args) {
-     RepeatedCharacters.repeatedCharacters("malayalam");
+        RepeatedCharacters.repeatedCharacters("malayalam");
     }
 }

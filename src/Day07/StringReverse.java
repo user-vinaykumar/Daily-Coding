@@ -2,8 +2,7 @@ package Day07;
 
 public class StringReverse {
 
-    public static String reverseString(String word)
-    {
+    public static String reverseString(String word) {
         return new StringBuilder(word).reverse().toString();
     }
 

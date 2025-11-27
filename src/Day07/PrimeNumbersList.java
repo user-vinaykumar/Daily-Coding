@@ -7,13 +7,10 @@ import java.util.List;
 
 public class PrimeNumbersList {
 
-    public static List<Integer> primeNumberList(List<Integer> list)
-    {
+    public static List<Integer> primeNumberList(List<Integer> list) {
         List<Integer> outputList = new ArrayList<>();
-        for(int i = 0; i < list.size(); i ++)
-        {
-            if(BigInteger.valueOf(list.get(i)).isProbablePrime(list.get(i)))
-            {
+        for (int i = 0; i < list.size(); i++) {
+            if (BigInteger.valueOf(list.get(i)).isProbablePrime(list.get(i))) {
                 outputList.add(list.get(i));
             }
         }
