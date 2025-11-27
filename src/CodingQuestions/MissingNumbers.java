@@ -4,9 +4,8 @@ import java.util.*;
 
 public class MissingNumbers {
 
-    public static List<Integer> missingNumbers(List<Integer> list)
-    {
-        if(list == null || list.isEmpty()) return Collections.emptyList();
+    public static List<Integer> missingNumbers(List<Integer> list) {
+        if (list == null || list.isEmpty()) return Collections.emptyList();
 
         List<Integer> outputList = new ArrayList<>();
         Set<Integer> set = new HashSet<>(list);
@@ -14,10 +13,8 @@ public class MissingNumbers {
         int min = Collections.min(set);
         int max = Collections.max(set);
 
-        for(int i = min; i < max; i++)
-        {
-            if(!list.contains(i))
-            {
+        for (int i = min; i < max; i++) {
+            if (!list.contains(i)) {
                 outputList.add(i);
             }
         }
