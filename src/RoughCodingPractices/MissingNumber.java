@@ -13,7 +13,7 @@ public class MissingNumber {
         if (list == null || list.isEmpty()) return Collections.emptyList();
 
         List<Integer> outputList = new ArrayList<>();
-        List<Integer> uniqueSortedList = list.stream().distinct().sorted()
+        List<Integer> uniqueSortedList = list.stream().distinct()
                 .sorted().collect(Collectors.toList());
 
         int min = Collections.min(uniqueSortedList);
