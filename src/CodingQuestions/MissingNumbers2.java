@@ -9,7 +9,7 @@ public class MissingNumbers2 {
     public static List<Integer> missingNumber2(List<Integer> list) {
         if (list == null || list.isEmpty()) return Collections.emptyList();
 
-        List<Integer> outputList = new ArrayList<>();
+
         Set<Integer> set = new HashSet<>(list);
 
         int min = Collections.min(set);
