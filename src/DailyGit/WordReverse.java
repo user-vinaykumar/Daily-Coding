@@ -22,6 +22,6 @@ public class WordReverse {
     }
 
     public static void main(String[] args) {
-        System.out.println(WordReverse.wordReverse("virtusa"));
+        System.out.println(WordReverse.wordReverse(".yawa rotcod eht speek yad a elppa nA"));
     }
 }
