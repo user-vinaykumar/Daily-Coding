@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class HighCharCount {
+public class RepeatedCharacter {
 
     public static void highCharCount(String word)
     {
@@ -30,6 +30,6 @@ public class HighCharCount {
     }
 
     public static void main(String[] args) {
-     HighCharCount.highCharCount("virttusa");
+     RepeatedCharacter.highCharCount("virttusa");
     }
 }
